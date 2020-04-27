@@ -1,0 +1,160 @@
+@import "colors"
+
+
+*
+    padding: 0
+    margin: 0
+    
+html
+    font-size: 10px
+    font-family: myriad-pro
+  
+a
+    font-size: 1.5rem
+    color: $text-color
+    text-decoration: none
+.container
+    max-width: 1172px
+    width: 100%
+    margin: 0 auto
+
+.header 
+    margin: 3rem 0rem 2.5rem 0rem
+
+.header__top-menu
+    display: flex
+    li
+        list-style: none
+        margin: 0rem  2.5rem 0rem 2.5rem
+        a
+            
+            font-weight: 100
+            position: relative
+            &::after
+                content: ''
+                position: absolute
+                width: 100%
+                height: 0.2rem
+                background: $blue
+                bottom: 0
+                left: 0
+                transform: translateY(2rem) scale(0)
+            &:hover         
+                &::after
+                    transform: translateY(2rem) scale(1)
+                    transition: all 0.5s
+.stratert-container
+    margin: 32rem 0rem 30rem 0rem
+    display: flex
+    flex-direction: column
+    text-align: center
+    &__text
+        h2
+        font-size: 5rem
+        color: $white
+        margin: 7.5rem
+    &__btn
+        font-size: 1.4rem     
+        a
+            font-size: 1.5rem
+            color: $text-color
+            text-decoration: none
+            padding: 1.5rem 3rem
+            background: $white
+            box-shadow: 5px 5px 0px $blue
+            &:hover
+                color: $white
+                box-shadow: 5px 5px 0px $white
+                background: $blue
+                transition: all 0.3s
+
+.starter-section
+    background-image: url('../img/background-section.png')
+    background-size: cover
+    background-repeat: none
+
+.img-content
+    max-width: 100%
+    height: auto
+.photography__img
+    max-width: 100%
+    height: auto
+.girl-photography
+    padding: 15rem 0rem
+
+.photography__img
+    box-shadow: 0.5rem 0.5rem 0rem $pink
+
+.photography
+    &__title
+        font-size: 4rem
+        padding: 7rem 0rem 1.8rem 0rem
+    &__description
+        font-size: 1.4rem
+        padding-bottom: 4rem
+        p
+            padding-bottom: 1.8rem
+    &__btn
+        a
+            padding: 1.5rem 3rem
+            background: $blue 
+            color: $white
+            box-shadow: 5px 5px 0px darken($blue, 15% )
+            &:hover
+                box-shadow: 5px 5px 0px $blue 
+                background: darken($blue, 15% )
+                transition: all 0.2s
+.portfolio
+    display: flex
+    flex-direction: column
+    text-align: center
+    max-width: 70rem
+    margin: auto
+    &__title
+        font-size: 4rem
+        margin-bottom: 2.5rem
+    &__subtitle
+        font-size: 1.6rem
+        color: $sub-title
+.dis-flex
+    display: flex
+
+.img-content
+    margin-bottom: 6rem
+.port-mar
+    margin: 6rem 0rem 9rem 0rem
+.footer
+    background-color: $text-color
+    padding: 10rem 0rem 5rem 0rem
+    &__addres
+        display: flex
+    &__phone
+        display: flex
+    &__img
+        height: 20px
+    &-text
+        margin: 0rem 0rem 3.7rem 3rem 
+        color: $white
+        font-size: 1.5rem
+        p
+            font-size: 1.5rem   
+    &__copyright
+        color: $sub-title
+        font-size: 1.5rem
+        margin-top: 6rem
+.under__logo
+    font-size: 2rem
+    text-transform: uppercase
+    margin-top: 2rem 
+    color: $white
+.icon-menu
+    display: none
+    position: absolute
+    right: 0
+    top: 0
+    z-index: 2
+    border: none
+    background: $white
+.header
+    position: relative
+@import "media"
